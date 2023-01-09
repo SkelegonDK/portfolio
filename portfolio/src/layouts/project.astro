@@ -92,6 +92,7 @@ const { content } = Astro.props;
 		</header>
 		<div class="leadIn">
 			<div class="wrapper">
+				<h3 class="client">{content.client}</h3>
 				{content.tags.map((t) => <span class="tag">{t}</span>)}
 				<h3 class="tagline">{content.description}</h3>
 			</div>

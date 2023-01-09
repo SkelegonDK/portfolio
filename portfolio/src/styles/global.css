@@ -1,4 +1,4 @@
-/* Global variables */
+@import url('https://fonts.cdnfonts.com/css/uncut-sans-2');/* Global variables */
 :root {
 	/* Colors */
 	--c-black: #05091e;
@@ -57,7 +57,7 @@
 body {
 	margin: 0;
 	color: var(--t-fg);
-	font-family: 'Inter', 'system-ui', sans-serif;
+	font-family: 'Uncut Sans VF', 'system-ui', sans-serif;
 }
 
 * {
@@ -75,6 +75,7 @@ a {
 
 h1 {
 	font-size: var(--f-u8);
+	font-weight: 700;
 }
 
 .button {
