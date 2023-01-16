@@ -11,10 +11,12 @@ const { frontmatter, url } = Astro.props.project;
 
 <div class="card">
 	<div class="titleCard" style={`background-image:url(${frontmatter.img})`}>
-		<h1 class="title">{frontmatter.title}</h1>
+		<!-- <h1 class="title">{frontmatter.title}</h1> -->
 	</div>
 	<div class="descCard">
+		
 		<p class="desc">{frontmatter.description}</p>
+		
 		<div class="tags">
 			Tagged:
 			{
@@ -48,7 +50,7 @@ const { frontmatter, url } = Astro.props.project;
 		align-items: center;
 		justify-content: center;
 		margin: 0;
-		color: white;
+		color: var(--c-pink);
 		flex-direction: column;
 		font-size: var(--f-u4);
 		font-weight: 900;

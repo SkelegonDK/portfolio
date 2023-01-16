@@ -4,7 +4,7 @@ title: Synthesia X Dell
 client: Dell technologies
 publishDate: 2020-03-04 00:00:00
 img: /assets/synthesia.png
-description: Dell asked us to create a video to showcase some of it's sustainability initiatives by different Dell representatives using Synthesia Studio.
+description: Dell sustainability videos using Synthesia Studio.
 tags:
   - Synthesia Studio
   - Video Production
