@@ -1,7 +1,7 @@
 ---
 layout: ../../layouts/project.astro
 title: Dell
-client: Dell technologies
+client: Dell Technologies
 publishDate: 2022-01-01 00:00:00
 img: /assets/Feature-Image-1.png
 description: General work for Dell

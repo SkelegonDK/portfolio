@@ -9,6 +9,10 @@
 	--c-orange: #ffb7a3;
 	--c-yellow: #ffdace;
 	--c-white: #fff;
+	
+	--hidden-blue:#B6D5F4;
+	--hidden-night:#2D1C46;
+	--hidden-love:#EC2326;
 
 	/* Fonts */
 	--f-u18: 11.390625em;
@@ -48,16 +52,17 @@
 	--f-d17: 0.10049617492923625em;
 	--f-d18: 0.0877914951989026em;
 
-	--t-fg: var(--c-black);
-	--t-bg: var(--c-white);
-	--t-subdue: var(--c-gray);
-	--t-active: var(--c-blue);
+	--t-fg: var(--hidden-night);
+	--t-bg: var(--hidden-blue);
+	--t-subdue: var(--hidden-night);
+	--t-active: var(--hidden-love);
 }
 
 body {
 	margin: 0;
 	color: var(--t-fg);
 	font-family: 'Uncut Sans VF', 'system-ui', sans-serif;
+	background-color: var(--hidden-blue);
 }
 
 * {
@@ -74,7 +79,7 @@ a {
 }
 
 h1 {
-	color: var(--t-bg);
+	color: var(--hidden-love);
 	font-size: var(--f-u8);
 	font-weight: 700;
 }
