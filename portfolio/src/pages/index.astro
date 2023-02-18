@@ -1,10 +1,15 @@
 ---
 // Component Imports
 import MainHead from '../components/MainHead.astro';
+
 import Nav from '../components/Nav.astro';
 import Footer from '../components/Footer.astro';
 import PortfolioPreview from '../components/PortfolioPreview.astro';
 import type { Project } from '../types';
+
+// Image Imports
+import Hero from '../Images/bedroom.jpg';
+
 
 // Data Fetching: List all Markdown posts in the repo.
 const projects = await Astro.glob<Project>('./project/**/*.md');
@@ -43,23 +48,19 @@ const featuredProject = projects[1]!;
 				height: auto;
 			}
 
-			.gradient,
+			
 			.gradient2 {
-				background-image: url('/assets/mesh-gradient.jpg');
+				/* background-image: url('/assets/bedroom.jpg');
+				
 				background-size: cover;
 				pointer-events: none;
-				mix-blend-mode: screen;
+				mix-blend-mode: screen; */
 				width: 100%;
 				height: 100%;
 				position: absolute;
 				top: 0;
 				left: 0;
 				z-index: 2;
-			}
-
-			.gradient2 {
-				mix-blend-mode: multiply;
-				background-size: cover;
 			}
 
 			.overlay {
@@ -125,8 +126,8 @@ const featuredProject = projects[1]!;
 				display: inline-block;
 				white-space: nowrap;
 				font-weight: 900;
-				color: var(--t-bg);
-				background-color: var(--t-fg);
+				color: var(--t-fg);
+				background-color: var(--t-bg);
 				padding: 0.25em 0.5em;
 				z-index: 2;
 				
@@ -207,16 +208,10 @@ const featuredProject = projects[1]!;
 	<body>
 		<Nav />
 		<header class="hero">
-			<img
-				width="1600"
-				height="1131"
-				class="img"
-				src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=1200&q=75"
-				srcset="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=1200&q=75 800w,https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=1200&q=75 1200w,https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=1600&q=75 1600w,https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=2400&q=75 2400w"
-				sizes="(max-width: 800px) 800px, (max-width: 1200px) 1200px, (max-width: 1600px) 1600px, (max-width: 2400px) 2400px, 1200px"
-			/>
-			<div class="gradient"></div>
-			<div class="gradient2"></div>
+			<video width="1920" autoplay class="gradient" loop>
+				<source src="/assets/bedroom_1.mp4" type="video/mp4" />
+			</video>
+			<!-- <div class="gradient2"></div> -->
 			<div class="overlay">
 				<h1 class="title">
 					<small class="subtitle">Creative Developer & Designer</small>Manuel Thomsen
@@ -229,26 +224,7 @@ const featuredProject = projects[1]!;
 				<!-- <p class="desc">Lover of dogs, roadtrips, and poetry.</p> -->
 			</div>
 		</header>
-		<main class="wrapper">
-			<div class="grid">
-				<div class="section">
-					<h3 class="sectionTitle">Selected Work</h3>
-					<PortfolioPreview project={featuredProject} />
-					<div class="buttonContainer">
-						<a href="/projects/" class="button">View All</a>
-					</div>
-				</div>
-				<div class="section">
-					<h3 class="sectionTitle">About me</h3>
-					<p class="bio">
-						<span>Hey there!</span> My name is Manuel and I am a software developer with a passion for creating innovative and user-friendly digital products.
-					</p>
-					<p>
-						<a href="/about">Read more</a>
-					</p>
-				</div>
-			</div>
-		</main>
+		
 		<Footer />
 	</body>
 </html>

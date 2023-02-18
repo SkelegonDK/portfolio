@@ -9,12 +9,16 @@ import Nav from '../components/Nav.astro';
 		<MainHead title="About | Jeanine White" description="About Jeanine White Lorem Ipsum" />
 		<style>
 			.heroImg {
-				max-height: 24rem;
-				object-fit: cover;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				max-height: 100%;
+				object-fit: contain;
 				overflow: hidden;
 			}
 
-			.heroImg img {
+			.heroImg img {		
+				position: relative;		
 				width: 100%;
 			}
 
@@ -27,6 +31,15 @@ import Nav from '../components/Nav.astro';
 			.wrapper.bio {
 				max-width: 50em;
 			}
+			span {
+				
+				background-color: #22222255;
+				background-blend-mode: multiply ;
+				color: white;
+				position: absolute;
+				font-weight: 600;
+				font-size: 5rem;
+			}
 		</style>
 	</head>
 	<body>
@@ -34,21 +47,23 @@ import Nav from '../components/Nav.astro';
 		<div class="wrapper">
 			<h1>About Me</h1>
 			<div class="heroImg">
-				<img
-					width="1400"
-					height="350"
-					src="https://images.unsplash.com/photo-1581977012607-4091712d36f9?auto=format&fit=crop&w=1400&h=350&q=75"
+				<span>Hi there!</span>
+				<video loop muted autoplay
+					width="100%"
+					height="auto"			
+					src="/assets/product.mp4"
 				/>
 			</div>
 			<div class="bio wrapper">
+
 				<p>
-					Hey there! My name is Manuel and I am a software developer with a passion for creating innovative and user-friendly digital products. I graduated from the Copenhagen School of Design and Technology with a degree in web development, and I am fluent in Danish, English, Italian, and Spanish.
+					My name is Manuel and I am a software developer with a passion for creating innovative and user-friendly digital products.
 					</p>
 					<p>
-					With my skills and knowledge in software development, I am able to create digital products that are not only functional but also visually appealing. I specialize in creating user-friendly and easy-to-use products that are tailored to the specific needs of my clients. I am always looking for new and innovative ways to push the boundaries of digital product development, and I am constantly seeking out new technologies and techniques to stay ahead of the curve.
+					With my skills and knowledge in both software development and creative production, I am able to create digital products that are not only functional but also visually appealing. I specialize in creating user-friendly and easy-to-use products that are tailored to the specific needs of my clients. I am always looking for new and innovative ways to push the boundaries of digital product development, and I am constantly seeking out new technologies and techniques to stay ahead of the curve.
 					</p>
 					<p>
-					When I am not working, you can find me exploring my love for 3D design and motion graphics. I am an avid user of Blender, Adobe After Effects, and other digital tools to create unique and visually appealing digital products. Also, I like to take a break and play video games to relax and have fun.
+					When I am not working, you can find me exploring my love for 3D design and motion graphics. I am an avid user of Blender, Adobe After Effects, or anything that can help me create functional and appealing digital products of all sorts. Also, I like to take a break and play video games to relax and have fun.
 					</p>
 					<p>	
 					If you are looking for a software developer who can help you create digital products that are visually appealing and user-friendly, look no further. I would be happy to work with you to bring your vision to life. So, feel free to reach out to me and let's create something amazing together!
