@@ -40,10 +40,26 @@
 
 <style>
 	nav {
+		
 		display: flex;
 		gap: 1rem;
 		align-items: center;
 		padding: 1rem;
+		background-color: var(--c-white);
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+	
+	}
+	@media (min-width: 750px) {
+		nav {position: relative;
+			bottom: initial;
+			left: initial;
+			width: initial;
+			padding: 1rem 2rem;
+			
+		}
 	}
 
 	.link {

@@ -4,7 +4,7 @@ import MainHead from '../components/MainHead.astro';
 
 import Nav from '../components/Nav.astro';
 import Footer from '../components/Footer.astro';
-import PortfolioPreview from '../components/PortfolioPreview.astro';
+// import PortfolioPreview from '../components/PortfolioPreview.astro';
 import type { Project } from '../types';
 
 // Image Imports
@@ -211,7 +211,7 @@ const featuredProject = projects[1]!;
 	<body>
 		<Nav />
 		<header class="hero">
-			<video width="1920" autoplay class="gradient" loop>
+			<video preload="auto" muted width="1920" autoplay class="gradient" loop>
 				<source src="/assets/bedroom_1.mp4" type="video/mp4" />
 			</video>
 			<!-- <div class="gradient2"></div> -->
@@ -222,7 +222,7 @@ const featuredProject = projects[1]!;
 				<div class="roles">
 					<span class="role">Software Developer<span class="invert">Python & JS</span></span>
 					<span class="role">Digital Product Designer<span class="invert">Figma & Blender</span></span>
-					<span class="role">Massive Tech Enthusiast<span class="invert">AI & creative production</span></span>
+					<span class="role">Massive Tech Enthusiast<span class="invert">AI & Creative Production</span></span>
 				</div>
 				<!-- <p class="desc">Lover of dogs, roadtrips, and poetry.</p> -->
 			</div>

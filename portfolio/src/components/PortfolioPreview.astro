@@ -15,12 +15,14 @@ const { frontmatter, url } = Astro.props.project;
 	</div>
 	<div class="descCard">
 		
+		<h1 class="title">{frontmatter.title}</h1>
 		<p class="desc">{frontmatter.description}</p>
 		
 		<div class="tags">
 			Tagged:
 			{
 				frontmatter.tags.map((t) => (
+					
 					<div class="tag" data-tag={t}>
 						{t}
 					</div>
@@ -50,7 +52,7 @@ const { frontmatter, url } = Astro.props.project;
 		align-items: center;
 		justify-content: center;
 		margin: 0;
-		color: var(--c-pink);
+		color: var(--hidden-love);
 		flex-direction: column;
 		font-size: var(--f-u4);
 		font-weight: 900;
