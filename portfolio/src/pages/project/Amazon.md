@@ -3,7 +3,7 @@ layout: ../../layouts/project.astro
 title: Amazon
 client: Amazon
 publishDate: 2021-03-04 00:00:00
-img: /assets/Sortation_operative_DSC7630_v1.jpg
+img: /assets/176shots_so.png
 description: Creating videos for Amazon's hiring campaign.
 tags:
   - Some
