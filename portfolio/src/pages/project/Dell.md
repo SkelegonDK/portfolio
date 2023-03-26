@@ -3,7 +3,7 @@ layout: ../../layouts/project.astro
 title: Dell
 client: Dell Technologies
 publishDate: 2022-01-01 00:00:00
-img: /assets/Feature-Image-1.png
+img: /assets/892shots_so.png
 description: General work for Dell
 tags:
   - OA banner
