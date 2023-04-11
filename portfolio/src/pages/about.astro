@@ -1,12 +1,15 @@
 ---
-import MainHead from '../components/MainHead.astro';
-import Footer from '../components/Footer.astro';
-import Nav from '../components/Nav.astro';
+import MainHead from "../components/MainHead.astro";
+import Footer from "../components/Footer.astro";
+import Nav from "../components/Nav.astro";
 ---
 
 <html lang="en">
 	<head>
-		<MainHead title="About | Manuel Thomsen" description="About Manuel Thomsen Lorem Ipsum" />
+		<MainHead
+			title="About | Manuel Thomsen"
+			description="About Manuel Thomsen Lorem Ipsum"
+		/>
 		<style>
 			.heroImg {
 				display: flex;
@@ -17,8 +20,8 @@ import Nav from '../components/Nav.astro';
 				overflow: hidden;
 			}
 
-			.heroImg img {		
-				position: relative;		
+			.heroImg img {
+				position: relative;
 				width: 100%;
 			}
 
@@ -32,9 +35,8 @@ import Nav from '../components/Nav.astro';
 				max-width: 50em;
 			}
 			span {
-				
 				background-color: #22222255;
-				background-blend-mode: multiply ;
+				background-blend-mode: multiply;
 				color: white;
 				position: absolute;
 				font-weight: 600;
@@ -53,25 +55,36 @@ import Nav from '../components/Nav.astro';
 			<h1>About Me</h1>
 			<div class="heroImg">
 				<span>&nbsp&nbsp Hi there!🙋‍♂️ &nbsp&nbsp</span>
-				<video loop muted autoplay
+				<video
+					loop
+					muted
+					autoplay
 					width="100%"
-					height="auto"			
-					src="/assets/product.mp4"
-				/>
+					height="auto"
+					src="/assets/product.mp4"></video>
 			</div>
 			<div class="bio wrapper">
-
 				<p>
-					My name is Manuel and I am a software developer with a passion for creating innovative and user-friendly digital products.
-					</p>
-					<p>
-					With my skills and knowledge in both software development and creative production, I am able to create digital products that are not only functional but also visually appealing. I specialize in creating user-friendly and easy-to-use products that are tailored to the specific needs of my clients. I am always looking for new and innovative ways to push the boundaries of digital product development, and I am constantly seeking out new technologies and techniques to stay ahead of the curve.
-					</p>
-					<p>
-					When I am not working, you can find me exploring my love for 3D design and motion graphics. I am an avid user of Blender, Adobe After Effects, or anything that can help me create functional and appealing digital products of all sorts. Also, I like to take a break and play video games to relax and have fun.
-					</p>
-					<p>	
-					If you are looking for a software developer who can help you create digital products that are visually appealing and user-friendly, look no further. I would be happy to work with you to bring your vision to life. So, feel free to reach out to me and let's create something amazing together!
+					Hello, I'm Manuel, a software developer who is passionate
+					about creating innovative and user-friendly digital
+					products. I specialize in developing products that not only
+					function seamlessly but are also visually appealing. My
+					experience and knowledge in both software development and
+					creative production enable me to create products that are
+					customized to my clients' specific needs. <br />
+					<br />
+					I am committed to pushing the limits of digital product development
+					by staying updated with the latest technologies and techniques.
+					When I'm not working, you can find me exploring my passion for
+					3D design and motion graphics. Whether it's working with Blender
+					or Adobe After Effects, I am always looking for ways to create
+					functional and aesthetically pleasing digital products. <br
+					/>
+					<br />
+					If you have an exciting idea for an AI, AR, or 3D project, I'd
+					love to hear about it! I'm always up for a challenge and am eager
+					to collaborate with people who share my passion.
+					<br />
 				</p>
 			</div>
 		</div>
