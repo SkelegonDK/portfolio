@@ -38,21 +38,55 @@ import Nav from "../components/Nav.astro";
 
 			.wrapper.bio {
 				max-width: 50em;
+				padding: 0;
 			}
 			.quote {
 				display: flex;
-				flex-direction: row;
+				flex-direction: column;
 				align-items: center;
 				justify-content: center;
 				margin-top: 4em;
 			}
 			.quote p {
-				margin-left: 2em;
+				color: var(--hidden-love);
+				
 				font-size: var(--f-u1);
 				font-weight: 800;
 				line-height: 2;
 			}
-			span {
+			.link {
+		text-decoration: none;
+		font-size: var(--f-d1);
+		padding-top: 0.75em;
+	}
+	.link-underlined {
+		border-radius: 2px;		
+		display: inline-block;
+		position: relative;
+		color: #0087ca;
+	}
+	.link-underlined::after {
+		content: '';
+		position: absolute;
+		width: 100%;
+		transform: scaleX(0);
+		height: 2px;
+		bottom: 0;
+		left: 0;
+		background-color: #0087ca;
+		transform-origin: bottom right;
+		transition: transform 0.25s ease-out;
+	}
+	.link-underlined:hover::after {
+		transform: scaleX(1);
+  		transform-origin: bottom left;
+	}
+
+	.link:hover,
+	.link:focus {
+		
+	}
+			.Hi {
 				background-color: #22222255;
 				background-blend-mode: multiply;
 				color: white;
@@ -61,10 +95,27 @@ import Nav from "../components/Nav.astro";
 				font-size: 2rem;
 			}
 			@media (min-width: 750px) {
-				span {
-					font-size: 5rem;
+
+				.Hi {
+					font-size: 4rem;
 				}
+
+				.quote {
+				display: flex;
+				flex-direction: row;
+				align-items: center;
+				justify-content: center;
+				margin-top: 4em;
 			}
+			.quote p {
+				
+				margin-left: 2em;
+				font-size: var(--f-u1);
+				font-weight: 800;
+				line-height: 2;
+			}
+			}
+				
 		</style>
 	</head>
 	<body>
@@ -72,7 +123,7 @@ import Nav from "../components/Nav.astro";
 		<div class="wrapper">
 			<h1>About Me</h1>
 			<div class="heroImg">
-				<span>&nbsp&nbsp Hi there!🙋‍♂️ &nbsp&nbsp</span>
+				<span class="Hi">&nbsp&nbsp Hi there!🙋‍♂️ &nbsp&nbsp</span>
 				<video
 					loop
 					muted
@@ -83,30 +134,16 @@ import Nav from "../components/Nav.astro";
 			</div>
 			<div class="bio wrapper">
 				<p>
-					Hello, I'm Manuel, a software developer who is passionate
-					about creating innovative and user-friendly digital
-					products. I specialize in developing products that not only
-					function seamlessly but are also visually appealing. My
-					experience and knowledge in both software development and
-					creative production enable me to create products that are
-					customized to my clients' specific needs. <br />
+					Welcome! I'm <span class="link link-underlined">Manuel</span>, a software developer driven by the desire to create innovative and user-friendly digital products. My expertise lies in developing solutions that are not only seamless in functionality but also visually captivating. With a strong background in both software development and creative production, I'm well-equipped to tailor products to my clients' unique needs. <br />
 					<br />
-					I am committed to pushing the limits of digital product development
-					by staying updated with the latest technologies and techniques.
-					When I'm not working, you can find me exploring my passion for
-					3D design and motion graphics. Whether it's working with Blender
-					or Adobe After Effects, I am always looking for ways to create
-					functional and aesthetically pleasing digital products. <br
-					/>
-					
+					I am dedicated to pushing the boundaries of digital product development by staying abreast of the latest technologies and techniques. Outside of work, my passion for 3D design and motion graphics keeps me exploring and growing. Whether it's working with Blender or Adobe After Effects, I continuously seek ways to create functional and visually striking digital products. <br />
 				</p>
 				<div class="quote">
 					<img class="portrait" src="/portfolio/public/assets/manuel.png" alt="">
 					<p>
-						If you have an exciting idea for an AI, AR, or 3D project, I'd
-						love to hear about it! I'm always up for a challenge and am eager
-						to collaborate with people who share my passion.
-						</p>
+						If you have an intriguing idea for an AI, AR, or 3D project, I'd love to hear about it! I'm always up for a challenge and eager to collaborate with like-minded individuals who share my enthusiasm for innovation.
+					</p>
+				
 					
 				</div>
 			</div>
