@@ -39,6 +39,19 @@ import Nav from "../components/Nav.astro";
 			.wrapper.bio {
 				max-width: 50em;
 			}
+			.quote {
+				display: flex;
+				flex-direction: row;
+				align-items: center;
+				justify-content: center;
+				margin-top: 4em;
+			}
+			.quote p {
+				margin-left: 2em;
+				font-size: var(--f-u1);
+				font-weight: 800;
+				line-height: 2;
+			}
 			span {
 				background-color: #22222255;
 				background-blend-mode: multiply;
@@ -85,14 +98,21 @@ import Nav from "../components/Nav.astro";
 					or Adobe After Effects, I am always looking for ways to create
 					functional and aesthetically pleasing digital products. <br
 					/>
-					<br />
-					If you have an exciting idea for an AI, AR, or 3D project, I'd
-					love to hear about it! I'm always up for a challenge and am eager
-					to collaborate with people who share my passion.
-					<br />
+					
 				</p>
-				<img class="portrait" src="/portfolio/public/assets/manuel.png" alt="">
+				<div class="quote">
+					<img class="portrait" src="/portfolio/public/assets/manuel.png" alt="">
+					<p>
+						If you have an exciting idea for an AI, AR, or 3D project, I'd
+						love to hear about it! I'm always up for a challenge and am eager
+						to collaborate with people who share my passion.
+						</p>
+					
+				</div>
 			</div>
+			<!-- 2 col responsive div with text on the left and an image on the right -->
+			
+
 		</div>
 		<Footer />
 	</body>

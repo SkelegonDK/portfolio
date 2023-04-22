@@ -2,7 +2,7 @@
 layout: ../../layouts/project.astro
 title: Excel Dashboard
 client: Dell / WT Studios
-publishDate: 2023-03-01 00:00:00
+publishDate: 2023-01-01 00:00:00
 img: /assets/120shots_so.png
 description: Excel Dashboard - Interactive Excel data.
 tags:
