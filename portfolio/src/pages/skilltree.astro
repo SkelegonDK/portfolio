@@ -1,0 +1,38 @@
+---
+import MainHead from '../components/MainHead.astro';
+import Footer from '../components/Footer.astro';
+import Nav from '../components/Nav.astro';
+---
+
+<html lang="en">
+	<head>
+		<MainHead
+			title="Skilltree | Manuel Thomsen"
+			description="Learn about Manuel Thomsen's most recent projects"
+		/>
+		<style>
+            .image-wrapper {
+                width: 2000px;
+                height: 100%;
+                overflow-x: scroll;
+                scroll-behavior: smooth;
+            }
+            
+        </style>
+	</head>
+	<body>
+		<Nav />
+		<div class="wrapper">
+			<h1 class="title">Skill tree</h1>
+
+            <div class="skill-tree">
+                
+            </div>
+            
+			
+		</div>
+        
+        
+		<Footer />
+	</body>
+</html>
