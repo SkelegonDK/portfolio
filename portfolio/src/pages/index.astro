@@ -34,11 +34,12 @@ const featuredProject = projects[1]!;
 			.hero {
 				position: relative;
 				overflow: hidden;
+				height: 80vw;
 			}
 
 			@media (min-width: 750px) {
 				.hero {
-					height: 45vw;
+					height: 70vw;
 				}
 			}
 
@@ -50,11 +51,7 @@ const featuredProject = projects[1]!;
 
 			
 			.gradient2 {
-				/* background-image: url('/assets/bedroom.jpg');
 				
-				background-size: cover;
-				pointer-events: none;
-				mix-blend-mode: screen; */
 				width: 100%;
 				height: 100%;
 				position: absolute;
@@ -63,7 +60,14 @@ const featuredProject = projects[1]!;
 				z-index: 2;
 			}
 
+			.video_container {
+				width: 100%;
+				
+				z-index: 1;
+				overflow: hidden;
+			}
 			.overlay {
+				overflow: hidden;
 				position: absolute;
 				top: 0;
 				left: 0;
@@ -99,6 +103,16 @@ const featuredProject = projects[1]!;
 			.grid {
 				display: grid;
 				grid-gap: 2rem;
+			}
+
+			.video_bg {
+				overflow: hidden;
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 1920px;
+				height: auto;
+				z-index: 1;
 			}
 
 			@media (min-width: 1200px) {
@@ -211,9 +225,12 @@ const featuredProject = projects[1]!;
 	<body>
 		<Nav />
 		<header class="hero">
-			<video preload="auto" muted width="1920" autoplay class="gradient" loop>
-				<source src="/assets/bedroom_1.mp4" type="video/mp4" />
-			</video>
+			<div class="video_container">
+				<video class="video_bg" preload="auto" muted autoplay class="gradient" loop>
+					<source src="/assets/bedroom_1.mp4" type="video/mp4" />
+				</video>
+			</div>
+			
 			<!-- <div class="gradient2"></div> -->
 			<div class="overlay">
 				<h1 class="title">
