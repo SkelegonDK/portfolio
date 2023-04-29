@@ -5,13 +5,8 @@ import Nav from '../components/Nav.astro';
 import Footer from '../components/Footer.astro';
 import type { Project } from '../types';
 
-
-// Data Fetching: List all Markdown posts in the repo.
 const projects = await Astro.glob<Project>('./project/**/*.md');
-// const featuredProject = projects[1]!;
 
-// Full Astro Component Syntax:
-// https://docs.astro.build/core-concepts/astro-components/
 ---
 
 <html lang="en">
@@ -223,7 +218,7 @@ const projects = await Astro.glob<Project>('./project/**/*.md');
 		
 		<header class="hero">
 			<div class="video_container">
-				<video src="../assets/bedroom_1.mp4" class="video_bg" preload="auto" muted autoplay loop></video>
+				<video src="../assets/bedroom_1.mp4" class="video_bg" muted autoplay loop></video>
 			</div>
 			
 			<!-- <div class="gradient2"></div> -->
