@@ -1,14 +1,9 @@
 ---
 // Component Imports
 import MainHead from '../components/MainHead.astro';
-
 import Nav from '../components/Nav.astro';
 import Footer from '../components/Footer.astro';
-// import PortfolioPreview from '../components/PortfolioPreview.astro';
 import type { Project } from '../types';
-
-// Image Imports
-// import Hero from '../Images/bedroom.jpg';
 
 
 // Data Fetching: List all Markdown posts in the repo.
@@ -228,7 +223,7 @@ const featuredProject = projects[1]!;
 		
 		<header class="hero">
 			<div class="video_container">
-				<video src="portfolio/assets/bedroom_1.mp4" class="video_bg" preload="auto" muted autoplay loop></video>
+				<video src="/portfolio/assets/bedroom_1.mp4" class="video_bg" preload="auto" muted autoplay loop></video>
 			</div>
 			
 			<!-- <div class="gradient2"></div> -->
