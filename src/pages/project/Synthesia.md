@@ -3,7 +3,7 @@ layout: ../../layouts/project.astro
 title: Synthesia X Dell
 client: Dell technologies
 publishDate: 2022-06-01 00:00:00
-img: /assets/955shots_so.png
+img: assets/955shots_so.png
 description: Dell sustainability videos using Synthesia Studio.
 tags:
   - Synthesia Studio
