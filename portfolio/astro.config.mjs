@@ -7,5 +7,5 @@ import image from "@astrojs/image";
 export default defineConfig({
   integrations: [image()],
   site: 'https://skelegonDK.github.io',
-  base: '/portfolio/',
+  base: '/portfolio/portfolio/',
 });
