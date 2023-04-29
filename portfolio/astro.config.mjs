@@ -1,11 +1,10 @@
 import { defineConfig } from 'astro/config';
 
 // https://astro.build/config
-import image from "@astrojs/image";
+
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [image()],
   site: 'https://skelegonDK.github.io',
-  base: '/portfolio/portfolio/',
+  base: '/portfolio',
 });
