@@ -16,6 +16,7 @@ const { content } = Astro.props;
 		<MainHead title={content.title} description={content.description} />
 		<style>
 			.hero {
+				
 				padding: 8rem;
 				display: flex;
 				background-color: var(--t-fg);
@@ -66,9 +67,16 @@ const { content } = Astro.props;
 
 			.wrapper {
 				padding-bottom: 4em;
+				margin-top: 4em;
 				margin-bottom: 4em;
 			}
+			footer{
+				padding: 2em 0;
+			}
 			@media (min-width: 768px) {
+				.hero{
+					margin-top: 6em;
+				} 
 				.content p {
 					padding: 1rem;
 					font-size: var(--f-u2);
