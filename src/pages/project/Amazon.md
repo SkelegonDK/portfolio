@@ -3,7 +3,7 @@ layout: ../../layouts/project.astro
 title: Amazon
 client: Amazon
 publishDate: 2020-01-01 00:00:00
-img: portfolio/assets/176shots_so.png
+img: ../../assets/176shots_so.png
 description: Creating videos for Amazon's hiring campaign.
 tags:
   - Some
