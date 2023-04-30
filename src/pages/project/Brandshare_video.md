@@ -3,7 +3,7 @@ layout: ../../layouts/project.astro
 title: Brandshare Video
 client: P & G -  Grey / WT Studios
 publishDate: 2022-01-02 00:00:00
-img: ../assets/25shots_so.png
+img: portfolio/assets/25shots_so.png
 description: Brandshare Video - Intuitive video creation for marketers.
 tags:
   - design
