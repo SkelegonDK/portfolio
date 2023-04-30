@@ -3,7 +3,7 @@ layout: ../../layouts/project.astro
 title: Synthesia X Dell
 client: Dell technologies
 publishDate: 2022-06-01 00:00:00
-img: ../assets/955shots_so.png
+img: portfolio/assets/955shots_so.png
 description: Dell sustainability videos using Synthesia Studio.
 tags:
   - Synthesia Studio
@@ -15,4 +15,4 @@ Dell asked Synthesia to create a video to showcase some of it's sustainability i
 
 The videos also needed to be localized for different regions, so we created a template that could be easily localized for different regions. Processes were also put in place to make sure that the videos were localized in a timely manner.
 
-Resulting in 30+ videos that were localized for different regions.
+Resulting in 30+ videos that were localized for different regions, and all was done in Synthesia Studio.
